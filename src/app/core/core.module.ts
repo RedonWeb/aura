@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { MaterialsModule } from '../materials/materials.module';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { MenuComponent } from './menu/menu.component';
+import { ServiceComponent } from './service/service.component';
 
 
 
@@ -11,7 +12,8 @@ import { MenuComponent } from './menu/menu.component';
   declarations: [
     HomeComponent,
     ContactUsComponent,
-    MenuComponent
+    MenuComponent,
+    ServiceComponent
   ],
   imports: [
     CommonModule,
