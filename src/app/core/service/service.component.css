@@ -35,15 +35,15 @@
 }
 
 .s1{
-    background: url('/assets/img/Aura/s1.jpg') center bottom;
+    background: url('/assets/img/s1.jpg') center bottom;
     background-size: contain;
 }
 .s2{
-    background: url('/assets/img/Aura/s2.jpg') center bottom;
+    background: url('/assets/img/s2.jpg') center bottom;
     /* background-size: contain; */
 }
 .s3{
-    background: url('/assets/img/Aura/s3.jpg') center bottom;
+    background: url('/assets/img/s3.jpg') center bottom;
     /* background-size: contain; */
 }
 
