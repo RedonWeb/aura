@@ -175,10 +175,12 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding-top: 50px;
     /* background: url('/assets/img/temp/home2.jpg'); */
-    background: #009688;
-    background-size: cover;
+    /* background: #009688;
+    background-size: cover; */
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 150, 136, 1) 100%);
     
   }
   
@@ -187,7 +189,7 @@
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
-    padding: 62px 55px 90px 55px;
+    padding: 25px 55px 75px 55px;
   }
   
   

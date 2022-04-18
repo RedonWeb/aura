@@ -1,0 +1,59 @@
+*{
+    color: #eee !important;
+}
+.g1 {
+    background:  rgba(0, 150, 136, 1)
+    
+}
+.g2 {
+    background:  rgba(0, 150, 136, 1)
+}
+/* .g1 {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 150, 136, 1) 100%);
+}
+.g2 {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 150, 136, 1) 100%);
+} */
+
+.filter{
+    height: 70vh;
+    filter: blur(2px);
+    -webkit-filter: blur(75px);
+    border-radius: 20px;
+    
+   
+}
+/* .filter:hover{
+    filter: none;
+    -webkit-filter: none;
+} */
+
+.sd{
+    width: 100%;
+}
+
+.s1{
+    background: url('/assets/img/Aura/s1.jpg') center bottom;
+    background-size: contain;
+}
+.s2{
+    background: url('/assets/img/Aura/s2.jpg') center bottom;
+    /* background-size: contain; */
+}
+.s3{
+    background: url('/assets/img/Aura/s3.jpg') center bottom;
+    /* background-size: contain; */
+}
+
+.serv-img{
+    border: 1px solid #eee;
+}
+.info{
+    width: 100%;
+}
+
+.card-title{
+    font-size: 2rem;
+}
