@@ -47,11 +47,9 @@
           </figure>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel"
-        data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel"
-        data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
       </button>
     </div>
 
@@ -59,47 +57,8 @@
 </div>
 <div id="section3" class="container-fluid text-center">
   <h1 class="display-3">Speciality</h1>
-  <div class="card-group">
-    <div class="card bg-dark mx-1 text-white">
-      <img src="/assets/img/card(2).jpg" class="card-img" alt="...">
-      <div class="card-img-overlay">
-      </div>
-      <!-- <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div> -->
-    </div>
-    <div class="card bg-dark mx-1 text-white">
-      <img src="/assets/img/card(3).jpg" class="card-img" alt="...">
-      <div class="card-img-overlay">
-      </div>
-      <!-- <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div> -->
-    </div>
-    <div class="card bg-dark mx-1 text-white">
-      <img src="/assets/img/card(4).jpg" class="card-img" alt="...">
-      <div class="card-img-overlay">
-      </div>
-      <!-- <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div> -->
-    </div>
-    <div class="card bg-dark mx-1 text-white">
-      <img src="/assets/img/card(5).jpg" class="card-img" alt="...">
-      <div class="card-img-overlay">
-      </div>
-      <!-- <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div> -->
-    </div>
-    <div class="card bg-dark mx-1 text-white">
-      <img src="/assets/img/card(6).jpg" class="card-img" alt="...">
-      <div class="card-img-overlay">
-      </div>
-      <!-- <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div> -->
-    </div>
+  <div class="d-flex flex-row justify-content-between container-fluid">
+    <img class="d" *ngFor="let img of cards" src={{img}} alt="" srcset="">
   </div>
 </div>
 <div id="section41" class="container-fluid text-center">
@@ -112,6 +71,7 @@
       <span class="placeholder col-6"></span>
       <span class="placeholder col-8"></span>
     </p>
+  </div>
 </div>
 <div id="section42" class="container-fluid text-center">
   <div id="about">
@@ -122,4 +82,5 @@
       <span class="placeholder col-6"></span>
       <span class="placeholder col-8"></span>
     </p>
+  </div>
 </div>
