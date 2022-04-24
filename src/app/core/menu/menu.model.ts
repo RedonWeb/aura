@@ -10,7 +10,7 @@ export interface Category{
 }
 
 export interface Price{
-    PriceSmall?: String,
-    PriceMedium?: String,
-    PriceLarge?: String,
+    Price1?: String,
+    Price2?: String,
+    Price3?: String,
 }
