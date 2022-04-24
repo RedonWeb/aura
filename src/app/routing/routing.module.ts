@@ -7,8 +7,6 @@ import { ServiceComponent } from '../core/service/service.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
-  {path: '404', component: HomeComponent},
-  {path: '**', redirectTo: '/home'},
   { path: "home", component: HomeComponent},
   { path: "contact-us", component: ContactUsComponent},
   { path: "menu", component: MenuComponent},
