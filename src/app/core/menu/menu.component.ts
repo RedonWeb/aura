@@ -55,7 +55,16 @@ export class MenuComponent implements OnInit {
         { ItemName: 'Bacardi Black', ItemPrice: {PriceMedium: '₹198', PriceLarge: '₹348'}},
         { ItemName: 'Old Monk', ItemPrice: {PriceMedium: '₹168', PriceLarge: '₹298'}},
       ]
-    }
+    },
+    {
+      Title: 'Shots (60ml)',
+      Item: [
+        { ItemName: 'Kamikaze', ItemDescription: 'Absolut', ItemPrice: {PriceLarge: '₹448'}},
+        { ItemName: 'Fire Shot', ItemDescription: 'Absolut', ItemPrice: {PriceLarge: '₹448'}},
+        { ItemName: 'Aura Special Shot', ItemDescription: 'Any Flavour', ItemPrice: {PriceLarge: '₹248'}},
+        { ItemName: 'B-52', ItemDescription: 'Vodka, Baileys, Jagemeister', ItemPrice: {PriceLarge: '₹498'}},
+      ]
+    },
   ];
   liquorRight: Category[] = [
     {
@@ -70,15 +79,6 @@ export class MenuComponent implements OnInit {
         { ItemName: 'Baileys', ItemPrice: {PriceLarge: '₹698'}},
         { ItemName: 'Jagermeister', ItemPrice: {PriceLarge: '₹698'}},
         { ItemName: 'Cointreau', ItemPrice: {PriceLarge: '₹698'}},
-      ]
-    },
-    {
-      Title: 'Shots (60ml)',
-      Item: [
-        { ItemName: 'Kamikaze', ItemDescription: 'Absolut', ItemPrice: {PriceLarge: '₹448'}},
-        { ItemName: 'Fire Shot', ItemDescription: 'Absolut', ItemPrice: {PriceLarge: '₹448'}},
-        { ItemName: 'Aura Special Shot', ItemDescription: 'Any Flavour', ItemPrice: {PriceLarge: '₹248'}},
-        { ItemName: 'B-52', ItemDescription: 'Vodka, Baileys, Jagemeister', ItemPrice: {PriceLarge: '₹498'}},
       ]
     },
     {

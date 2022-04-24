@@ -6,8 +6,7 @@ import { MenuComponent } from '../core/menu/menu.component';
 import { ServiceComponent } from '../core/service/service.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: "home", component: HomeComponent},
   { path: "contact-us", component: ContactUsComponent},
   { path: "menu", component: MenuComponent},
