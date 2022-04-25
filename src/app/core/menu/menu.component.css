@@ -8,8 +8,13 @@
 .container {
   background-color: #fff;
   color: #000;
+  overflow-y: scroll;
   height: 100vh !important;
   font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+.container::-webkit-scrollbar {
+  width: 0px;
 }
 
 .mat-tab-label-content{

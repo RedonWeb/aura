@@ -166,7 +166,6 @@ export class MenuComponent implements OnInit {
     { ItemName: 'Virgin Sangria', ItemDescription: 'Cranberry Juice, Apple Juice, Sangria Syrup, Lemon Juice, Fresh Orange Chunks, Orange Juice', ItemPrice: { Price3: '₹225' } },
     { ItemName: 'Italian Smotch', ItemDescription: 'Mint Leaves, Lemon Juice, Lemon Chunks, Ginger Ale, Lime Cordial, Top Up with Coke', ItemPrice: { Price3: '₹225' } },
   ]
-
   Cocktail: Item[] = [
     { ItemName: 'Mojito', ItemDescription: 'White Rum/Absolut, Mint Leaves, Brown Sugar, Lime Juice', ItemPrice: { Price2: '₹398', Price3: '₹498' } },
     { ItemName: 'Whisky Sour', ItemDescription: 'Whisky, Lime Juice, Egg White', ItemPrice: { Price3: '₹498' } },
@@ -177,7 +176,6 @@ export class MenuComponent implements OnInit {
     { ItemName: 'Pink Lady', ItemDescription: 'Gin, Fresh Cream, StrawBerry Puree', ItemPrice: { Price3: '₹498' } },
     { ItemName: 'L.I.I.T', ItemDescription: 'Bacardi, Vodka, Tequila, Gin, Coke', ItemPrice: { Price3: '₹698' } },
   ]
-
   tandoor: Category[] = [
     {
       Title: 'Vegetarian',
@@ -212,7 +210,6 @@ export class MenuComponent implements OnInit {
       ]
     },
   ]
-
   indian: Category[] = [
     {
       Title: 'Vegetarian',
