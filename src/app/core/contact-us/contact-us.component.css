@@ -14,9 +14,6 @@ h1{
   font-family: 'Goldman', cursive;
 }
 
-address{
-  width: 50%;
-}
 
 address h2{
   font-family: 'Goldman', cursive;
@@ -49,4 +46,283 @@ address p{
   border-radius: 10px;
   overflow: hidden;
   padding: 25px 55px 55px 55px;
+}
+
+.contact-description{
+  width: 50%;
+}
+
+.contact-info{
+  padding-top: 7px;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.demo-buttons-group {
+  margin-top: 20px;
+}
+
+/* More fancy Icon buttons */
+button.icon {
+  --button-opacity-focus: initial;
+  --button-opacity-hover: initial;
+  --button-opacity-active: initial;
+  background: transparent;
+  border: none;
+}
+
+button.icon button {
+  z-index: 2;
+}
+
+
+
+.icon-container {
+  width: 100%;
+  height: 60px;
+}
+
+.icon {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-left: 12px;
+  margin-right: 12px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.icon::before,
+.icon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 0.25s ease;
+  border-radius: 30px;
+}
+
+.icon i {
+  position: relative;
+  font-size: 30px;
+  color: inherit;
+  transition: all 0.25s ease;
+}
+
+.icon-fill {
+color: #16A085;
+}
+.icon-enter {
+color: #3b5998;
+}
+.icon-expand {
+color: #C82647;
+}
+.icon-collapse {
+color: #00bcd4;
+}
+.icon-rotate {
+color: #7E3661;
+}
+
+
+.icon-fill:hover,
+.icon-enter:hover,
+.icon-expand:hover,
+.icon-rotate:hover,
+.icon-collapse:hover{
+  color: #fff;
+}
+
+.icon-fill::before {
+  transition-duration: 0.5s;
+  box-shadow: inset 0 0 0 1px #16A085;
+}
+
+.icon-fill:hover::before {
+  box-shadow: inset 0 0 0 60px #16A085;
+}
+
+.icon-enter::after {
+  box-shadow: inset 0 0 0 1px #3b5998;
+}
+
+.icon-enter::before {
+  border-radius: 0;
+  margin-left: -100%;
+  box-shadow: inset 0 0 0 60px #3b5998;
+}
+
+.icon-enter:hover::before {
+  margin-left: 0;
+}
+
+.icon-expand::after {
+  box-shadow: inset 0 0 0 1px #C82647;
+}
+
+.icon-expand::before {
+  margin-left: -100%; 
+  box-shadow: inset 0 0 0 60px #C82647;
+}
+
+.icon-expand:hover::before {
+  box-shadow: inset 0 0 0 1px #C82647;
+  margin-left: 0px;
+  background: #C82647;
+}
+
+.icon-collapse::before {
+  border-radius: 0;
+}
+
+.icon-collapse:hover::before {
+  box-shadow: inset 0 30px 0 0 #00bcd4, inset 0 -30px 0 0 #00bcd4;
+
+}
+
+.icon-collapse::after {
+  box-shadow: inset 0 0 0 1px #00bcd4;
+}
+
+.icon-rotate {
+  box-shadow: inset 0 0 0 1px #7E3661;
+}
+
+.icon-rotate::after,
+.icon-rotate::before {
+  border: 0px solid transparent;
+}
+
+.icon-rotate:hover::before {
+  transition: border-top-width 0.3s ease, border-top-color 0.3s ease;
+  border-width: 60px;
+  border-top-color: #7E3661;
+}
+
+.icon-rotate:hover::after {
+  transition: border-left-width 0.3s ease, border-left-color 0.3s ease;
+  border-width: 60px;
+  border-left-color: #7E3661;
+}
+
+.icon-rotate:hover {
+  transition: background 0.001s ease 0.3s;
+  background: #7E3661;
+}
+
+.icon-rotate i {
+  z-index: 1;
+}
+
+button.button-concept {
+  width: auto;
+  height: auto;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+button.button-concept button {
+  padding: 0;
+}
+
+/* Main Styles */
+button.button-concept .button {
+  display: flex;
+  background-color: #c0392b;
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+
+button.button-concept .button span,
+button.button-concept .button .icon {
+  display: block;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  top: 0;
+}
+
+button.button-concept .button span {
+  width: 72%;
+  line-height: inherit;
+  font-size: 22px;
+  text-transform: uppercase;
+  left: 0;
+  transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+
+button.button-concept .button span:after {
+  content: '';
+  background-color: #a53125;
+  width: 2px;
+  height: 70%;
+  position: absolute;
+  top: 15%;
+  right: -1px;
+}
+
+button.button-concept .button .icon {
+  width: 28%;
+  right: 0;
+  transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+
+button.button-concept .button .icon .fa {
+  font-size: 30px;
+  vertical-align: middle;
+  transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4), height 0.25s ease;
+}
+
+button.button-concept .button .icon .fa-check {
+  display: none;
+}
+
+button.button-concept .button.success span,
+button.button-concept .button:hover span {
+  left: -72%;
+  width: 0 !important;
+  opacity: 0;
+}
+
+button.button-concept .button.success .icon,
+button.button-concept .button:hover .icon {
+  width: 100%;
+}
+
+button.button-concept .button.success .icon .fa,
+button.button-concept .button:hover .icon .fa {
+  font-size: 45px;
+}
+
+button.button-concept .button.success {
+  background-color: #27ae60;
+}
+
+button.button-concept .button.success .icon .fa-remove {
+  display: none;
+}
+
+button.button-concept .button.success .icon .fa-check {
+  display: inline-block;
+}
+
+button.button-concept .button:hover {
+  opacity: .9;
+}
+
+button.button-concept .button:active {
+  opacity: 1;
 }
