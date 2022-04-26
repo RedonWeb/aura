@@ -3,18 +3,31 @@
 </div>
 <div id="section2" class="container-fluid text-center">
   <div id="about">
-    <h1 class="display-5">Welcome</h1>
-    <p class="card-text placeholder-glow">
-      <span class="placeholder col-7"></span>
-      <span class="placeholder col-4"></span>
-      <span class="placeholder col-4"></span>
-      <span class="placeholder col-6"></span>
-      <span class="placeholder col-8"></span>
+    <h1>Welcome</h1>
+    <p class="card-text">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias ratione officia laboriosam! Neque laboriosam dolore et officiis dignissimos? Optio esse explicabo velit illo. Voluptate officia, asperiores fuga eveniet sapiente dolor autem deleniti tenetur magnam! Corporis animi hic nulla eum doloribus debitis! Possimus, corrupti nemo nam error ea dignissimos in molestiae repellat eos quisquam labore, sint culpa at maiores minus? Quidem, laudantium temporibus odio magni sequi error atque impedit facere ab nostrum ipsa libero illo laborum facilis inventore mollitia quo!
     </p>
   </div>
-  <div id="review" class="pt-5">
-    <h1 class="display-5">Review</h1>
-    <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div id="review" class="py-5">
+    <h1>Review</h1>
+    <div class="carousel">
+      <div class="container">
+        <div *ngFor="let review of reviews" class="card">
+          <div class="d-flex title">
+            <img src={{review.profile}} class="placeholer me-2" width="30" height="30" style="border-radius: 25px;">
+            <h3>{{review.reviewBy}}</h3>
+          </div>
+          <div class="bar">
+            <div class="emptybar"></div>
+            <div class="filledbar"></div>
+          </div>
+          <div class="circle">
+            {{review.review}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="3000">
           <figure class="text-center">
@@ -26,23 +39,13 @@
             </figcaption>
           </figure>
         </div>
-        <div class="carousel-item" data-bs-interval="3000">
+        <div class="carousel-item" *ngFor="let review of reviews" data-bs-interval="3000">
           <figure class="text-center">
-            <blockquote class="blockquote placeholder-glow">
-              <span class="placeholder col-7"></span>
+            <blockquote class="blockquote">
+              {{review.review}}
             </blockquote>
             <figcaption class="blockquote-footer">
-              Someone famous in <cite title="Source Title">Source Title</cite>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <figure class="text-center">
-            <blockquote class="blockquote placeholder-glow">
-              <span class="placeholder col-7"></span>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-              Someone famous in <cite title="Source Title">Source Title</cite>
+              Someone famous in <cite title="Source Title">{{review.reviewBy}}</cite>
             </figcaption>
           </figure>
         </div>
@@ -51,19 +54,19 @@
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
       </button>
-    </div>
+    </div> -->
 
   </div>
 </div>
 <div id="section3" class="container-fluid text-center">
-  <h1 class="display-3">Speciality</h1>
+  <h1>Speciality</h1>
   <div class="d-flex flex-row justify-content-between container-fluid">
     <img class="d" *ngFor="let img of cards" src={{img}} alt="" srcset="">
   </div>
 </div>
 <div id="section41" class="container-fluid text-center">
   <div id="about">
-    <h1 class="display-5">Heading</h1>
+    <h1>Heading</h1>
     <p class="card-text placeholder-glow">
       <span class="placeholder col-7"></span>
       <span class="placeholder col-4"></span>
