@@ -25,18 +25,25 @@
     background-color: #ff9800;
 }
 
-#about p {
+#about,#section42 p {
     margin: auto;
     width: 90%;
     font-size: 20px;
     font-weight: lighter;
-    /* text-align: center;
-    font-family: Ceremonial-Instrument, monospace; */
+    /* text-align: center;*/
+    /* font-family: Ceremonial-Instrument, monospace; */
+    font-family: monospace;
 }
 
 h1 {
     font-size: 2.5rem;
-    font-family: 'Goldman', cursive;
+    /* font-family: 'Goldman', cursive; */
+    font-family: 'Alegreya SC', serif;
+}
+h1.subtitle{
+    font-size: 3rem;
+    line-height: 2rem;
+    font-family: 'My Soul', cursive;
 }
 
 .card {
@@ -49,19 +56,27 @@ h1 {
 }
 
 #section41 {
+    padding-bottom: 50px;
     padding-top: 50px;
-    height: 500px;
+    height: 100%;
     color: #fff;
+}
+
+.blue{
     background-color: #00bcd4;
 }
 
 #section42 {
-    padding-top: 50px;
-    height: 500px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    border-radius: 30px;
+    height: 100%;
     color: #fff;
-    background-color: #009688;
 }
 
+.green{
+    background-color: #009688;
+}
 
 .d {
     height: 450px;
@@ -155,4 +170,23 @@ h1 {
     width: 80%;
     text-align: justify;
     font-family: 'Unica One', cursive;
+}
+
+.chef-m{
+    width: 80%;
+    border-radius: 25px;
+    padding: 0   200px;
+    background-color: #eee;
+    text-align: justify;
+}
+
+.chef-m h1{
+    color: #000;    
+}
+
+.chef-m p{
+    color: #444 !important;
+    font-size: 2rem !important;
+    line-height: 2rem !important;
+    font-family: 'Qwigley', cursive !important;
 }

@@ -44,6 +44,15 @@
     font-size: 2rem;
 }
 
-.display-1{
-    font-family: 'Goldman', cursive;
+.display-3{
+    /* font-family: 'Goldman', cursive; */
+    font-family: 'Alegreya SC', serif;
+}
+
+.info p{
+    font-family: monospace;
+    font-size: 1.5rem;
+    line-height: 1.2rem;
+    font-weight: lighter;
+    color: #aaa;
 }

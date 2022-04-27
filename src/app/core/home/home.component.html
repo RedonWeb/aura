@@ -2,10 +2,14 @@
 
 </div>
 <div id="section2" class="container-fluid text-center">
-  <div id="about">
-    <h1>Welcome</h1>
+  <div id="about" class="py-3">
+    <h1 class="py-1">Welcome</h1>
+    <h1 class="subtitle">Aura Kitchen & Spirits is a fine dining <br> restaurant with a rooftop bar</h1>
     <p class="card-text">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias ratione officia laboriosam! Neque laboriosam dolore et officiis dignissimos? Optio esse explicabo velit illo. Voluptate officia, asperiores fuga eveniet sapiente dolor autem deleniti tenetur magnam! Corporis animi hic nulla eum doloribus debitis! Possimus, corrupti nemo nam error ea dignissimos in molestiae repellat eos quisquam labore, sint culpa at maiores minus? Quidem, laudantium temporibus odio magni sequi error atque impedit facere ab nostrum ipsa libero illo laborum facilis inventore mollitia quo!
+      Some say Aura is a great place for a date, for others it is a place to walk in with the family and extended
+      family, yet others come to celebrate an evening with friends or for some to come for a lonely drink to mend their
+      broken heart, but what we make sure is when a person leaves he’s gotta smile on his face, with a full stomach and
+      a happy heart.
     </p>
   </div>
   <div id="review" class="py-5">
@@ -27,35 +31,6 @@
         </div>
       </div>
     </div>
-    <!-- <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="3000">
-          <figure class="text-center">
-            <blockquote class="blockquote placeholder-glow">
-              <span class="placeholder col-7"></span>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-              Someone famous in <cite title="Source Title">Source Title</cite>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="carousel-item" *ngFor="let review of reviews" data-bs-interval="3000">
-          <figure class="text-center">
-            <blockquote class="blockquote">
-              {{review.review}}
-            </blockquote>
-            <figcaption class="blockquote-footer">
-              Someone famous in <cite title="Source Title">{{review.reviewBy}}</cite>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
-      </button>
-    </div> -->
-
   </div>
 </div>
 <div id="section3" class="container-fluid text-center">
@@ -64,26 +39,59 @@
     <img class="d" *ngFor="let img of cards" src={{img}} alt="" srcset="">
   </div>
 </div>
-<div id="section41" class="container-fluid text-center">
-  <div id="about">
-    <h1>Heading</h1>
-    <p class="card-text placeholder-glow">
-      <span class="placeholder col-7"></span>
-      <span class="placeholder col-4"></span>
-      <span class="placeholder col-4"></span>
-      <span class="placeholder col-6"></span>
-      <span class="placeholder col-8"></span>
-    </p>
+<div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="3000">
+      <div id="section41" class="container-fluid position-relative text-center">
+        <div id="section42" class="container-fluid text-center green">
+          <div class="chef-m py-2 mx-auto d-flex">
+            <div class="img px-4">
+              <img
+                src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                alt="" width="400" height="400" style="border-radius: 100%; border: 1px solid #009688;" srcset="">
+            </div>
+            <div class="pt-4">
+              <div id="about">
+                <h1>Chef {{"{\{Name\}}"}}</h1>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur provident autem dolore sit aut neque
+                nihil.
+                Similique quas, ratione facere ad dolor error dolorem consectetur consequuntur nulla cum fugiat
+                laudantium!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <div id="section41" class="container-fluid position-relative text-center">
+        <div id="section42" class="container-fluid text-center blue">
+          <div class="chef-m py-2 mx-auto d-flex">
+            <div class="img px-4">
+              <img
+                src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                alt="" width="400" height="400" style="border-radius: 100%; border: 1px solid #00bcd4;" srcset="">
+            </div>
+            <div class="pt-4">
+              <div id="about">
+                <h1>Chef {{"{\{Name\}}"}}</h1>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur provident autem dolore sit aut neque
+                nihil.
+                Similique quas, ratione facere ad dolor error dolorem consectetur consequuntur nulla cum fugiat
+                laudantium!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-<div id="section42" class="container-fluid text-center">
-  <div id="about">
-    <p class="card-text placeholder-glow">
-      <span class="placeholder col-7"></span>
-      <span class="placeholder col-4"></span>
-      <span class="placeholder col-4"></span>
-      <span class="placeholder col-6"></span>
-      <span class="placeholder col-8"></span>
-    </p>
-  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+  </button>
 </div>
