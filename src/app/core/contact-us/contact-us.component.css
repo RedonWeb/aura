@@ -19,10 +19,6 @@ address h2{
   font-family: 'Goldman', cursive;
 }
 
-address p{
-  font-family: Ceremonial-Instrument, monospace;
-}
-
 .container-contact {
   width: 100%;
   min-height: 100vh;

@@ -5,6 +5,11 @@
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 150, 136, 1) 100%);
 }
 
+.bg1{
+  background: url("https://img.freepik.com/free-vector/seamless-pattern-with-vegetarian-food_73378-545.jpg?w=740") center;
+  background-size: contain;
+}
+
 .container {
   background-color: #fff;
   color: #000;
@@ -18,6 +23,7 @@
 }
 
 .mat-tab-label-content{
+  background: #eee;
   font-family: 'Montserrat Subrayada', sans-serif;
 }
 
@@ -84,7 +90,7 @@
 }
 
 .item-desc {
-  color: #999;
+  color: #fff;
   font-size: 10px;
   font-family: 'IBM Plex Mono', monospace;
 }

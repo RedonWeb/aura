@@ -1,11 +1,19 @@
 @font-face {
-    font-family: Ceremonial-Instrument;
-    src: url('/src/assets/fonts/CEREMONIALiNSTRUMENT.otf');
+    font-family: League-Gothic;
+    src: url('/assets/fonts/LeagueGothic-Regular.ttf');
+}
+@font-face {
+    font-family: Paragon-Regular;
+    src: url('/assets/fonts/Paragon-Regular.otf');
+}
+@font-face {
+    font-family: Alameda-Script;
+    src: url('/assets/fonts/AlamedaScriptPersonalUseRegular-RpPdv.otf');
 }
 
 #section1 {
     padding-top: 50px;
-    height: 605px;
+    height: 100vh;
     color: #fff;
     background: url("src/assets/img/homeBg1.jpg") bottom center;
     background-size: contain;
@@ -19,10 +27,10 @@
 }
 
 #section3 {
-    padding-top: 50px;
+    padding-top: 30px;
     height: 600px;
     color: #fff;
-    background-color: #ff9800;
+    background-color: #ffbe5d;
 }
 
 #about,#section42 p {
@@ -30,20 +38,19 @@
     width: 90%;
     font-size: 20px;
     font-weight: lighter;
-    /* text-align: center;*/
-    /* font-family: Ceremonial-Instrument, monospace; */
     font-family: monospace;
 }
 
 h1 {
     font-size: 2.5rem;
     /* font-family: 'Goldman', cursive; */
-    font-family: 'Alegreya SC', serif;
+    font-family: League-Gothic;
 }
-h1.subtitle{
-    font-size: 3rem;
+.subtitle{
+    font-weight: lighter;
     line-height: 2rem;
-    font-family: 'My Soul', cursive;
+    font-family: 'My soul', cursive;
+    
 }
 
 .card {
@@ -79,7 +86,7 @@ h1.subtitle{
 }
 
 .d {
-    height: 450px;
+    height: 400px;
     width: 270px;
     border-radius: 25px;
     background: center;
@@ -169,7 +176,8 @@ h1.subtitle{
     left: 20px;
     width: 80%;
     text-align: justify;
-    font-family: 'Unica One', cursive;
+    font-size: 0.8rem;
+    font-family: Paragon-Regular;
 }
 
 .chef-m{

@@ -1,6 +1,6 @@
-<div class="bg">
+<div class="bg bg1">
   <div class="container py-5">
-    <div class="display-5 text-center">Menu</div>  
+    <div class="display-5 text-center">Menu</div>
     <mat-tab-group mat-stretch-tabs class="stretched-tabs mat-elevation-z4">
       <mat-tab>
         <ng-template mat-tab-label>
@@ -8,22 +8,21 @@
             <mat-icon class="tab-icon material-symbols-outlined">restaurant_menu</mat-icon>Food
           </div>
         </ng-template>
-  
+
         <mat-tab-group>
           <mat-tab>
             <ng-template mat-tab-label>
               <div class="mat-tab-label-content">
                 <mat-icon class="tab-icon material-symbols-outlined">kebab_dining</mat-icon>Tandoor
               </div>
-  
+
             </ng-template>
-  
+
             <div class="content p-3 d-flex justify-content-around">
               <cdk-accordion class="accordion" style="max-width: 842px;">
-                <cdk-accordion-item *ngFor="let items of tandoor; let index = index;"
-                  #accordionItem="cdkAccordionItem" class="accordion-item" role="button" tabindex="0"
-                  [attr.id]="'accordion-header-' + index" [attr.aria-expanded]="accordionItem.expanded"
-                  [attr.aria-controls]="'accordion-body-' + index">
+                <cdk-accordion-item *ngFor="let items of tandoor; let index = index;" #accordionItem="cdkAccordionItem"
+                  class="accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index"
+                  [attr.aria-expanded]="accordionItem.expanded" [attr.aria-controls]="'accordion-body-' + index">
                   <div class="accordion-item-header" style="width: 840px;" (click)="accordionItem.toggle()">
                     {{ items.Title }}
                     <span class="accordion-item-description">
@@ -50,21 +49,20 @@
               </cdk-accordion>
             </div>
           </mat-tab>
-          
+
           <mat-tab>
             <ng-template mat-tab-label>
               <div class="mat-tab-label-content">
                 <mat-icon class="tab-icon material-symbols-outlined">brunch_dining</mat-icon>Indian Main Course
               </div>
-  
+
             </ng-template>
-  
+
             <div class="content p-3 d-flex justify-content-around">
               <cdk-accordion class="accordion" style="max-width: 842px;">
-                <cdk-accordion-item *ngFor="let items of indian; let index = index;"
-                  #accordionItem="cdkAccordionItem" class="accordion-item" role="button" tabindex="0"
-                  [attr.id]="'accordion-header-' + index" [attr.aria-expanded]="accordionItem.expanded"
-                  [attr.aria-controls]="'accordion-body-' + index">
+                <cdk-accordion-item *ngFor="let items of indian; let index = index;" #accordionItem="cdkAccordionItem"
+                  class="accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index"
+                  [attr.aria-expanded]="accordionItem.expanded" [attr.aria-controls]="'accordion-body-' + index">
                   <div class="accordion-item-header" style="width: 840px;" (click)="accordionItem.toggle()">
                     {{ items.Title }}
                     <span class="accordion-item-description">
@@ -91,21 +89,20 @@
               </cdk-accordion>
             </div>
           </mat-tab>
-  
+
           <mat-tab>
             <ng-template mat-tab-label>
               <div class="mat-tab-label-content">
                 <mat-icon class="tab-icon material-symbols-outlined">ramen_dining</mat-icon>Chinese
               </div>
-  
+
             </ng-template>
-  
+
             <div class="content p-3 d-flex justify-content-around">
               <cdk-accordion class="accordion" style="max-width: 842px;">
-                <cdk-accordion-item *ngFor="let items of chinese; let index = index;"
-                  #accordionItem="cdkAccordionItem" class="accordion-item" role="button" tabindex="0"
-                  [attr.id]="'accordion-header-' + index" [attr.aria-expanded]="accordionItem.expanded"
-                  [attr.aria-controls]="'accordion-body-' + index">
+                <cdk-accordion-item *ngFor="let items of chinese; let index = index;" #accordionItem="cdkAccordionItem"
+                  class="accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index"
+                  [attr.aria-expanded]="accordionItem.expanded" [attr.aria-controls]="'accordion-body-' + index">
                   <div class="accordion-item-header" style="width: 840px;" (click)="accordionItem.toggle()">
                     {{ items.Title }}
                     <span class="accordion-item-description">
@@ -132,15 +129,15 @@
               </cdk-accordion>
             </div>
           </mat-tab>
-  
+
           <mat-tab>
             <ng-template mat-tab-label>
               <div class="mat-tab-label-content">
                 <mat-icon class="tab-icon material-symbols-outlined">dinner_dining</mat-icon>Continental
               </div>
-  
+
             </ng-template>
-  
+
             <div class="content p-3 d-flex justify-content-around">
               <cdk-accordion class="accordion" style="max-width: 842px;">
                 <cdk-accordion-item *ngFor="let items of continental; let index = index;"
@@ -173,15 +170,15 @@
               </cdk-accordion>
             </div>
           </mat-tab>
-  
+
           <mat-tab>
             <ng-template mat-tab-label>
               <div class="mat-tab-label-content">
                 <mat-icon class="tab-icon material-symbols-outlined">child_care</mat-icon>Kids Corner
               </div>
-  
+
             </ng-template>
-  
+
             <div class="content px-5 py-3">
               <mat-grid-list cols="12" rowHeight="3:1" *ngFor="let item of kidsCorner">
                 <mat-grid-tile [colspan]="4">
@@ -196,28 +193,28 @@
               </mat-grid-list>
             </div>
           </mat-tab>
-          
-  
+
+
         </mat-tab-group>
-        
+
       </mat-tab>
-  
+
       <mat-tab>
         <ng-template mat-tab-label>
           <div class="mat-tab-label-content">
             <mat-icon class="tab-icon material-symbols-outlined">local_cafe</mat-icon>Bevrages
           </div>
         </ng-template>
-  
+
         <mat-tab-group>
           <mat-tab>
             <ng-template mat-tab-label>
               <div class="mat-tab-label-content">
                 <mat-icon class="tab-icon material-symbols-outlined">local_bar</mat-icon>liquor
               </div>
-  
+
             </ng-template>
-  
+
             <div class="content p-3 d-flex justify-content-around">
               <cdk-accordion class="accordion">
                 <cdk-accordion-item *ngFor="let items of liquorLeft; let index = index;"
@@ -252,7 +249,7 @@
                   </div>
                 </cdk-accordion-item>
               </cdk-accordion>
-  
+
               <cdk-accordion class="accordion">
                 <cdk-accordion-item *ngFor="let items of liquorRight; let index = index;"
                   #accordionItem="cdkAccordionItem" class="accordion-item" role="button" tabindex="0"
@@ -288,14 +285,14 @@
               </cdk-accordion>
             </div>
           </mat-tab>
-          
+
           <mat-tab>
             <ng-template mat-tab-label>
               <div class="mat-tab-label-content">
                 <mat-icon class="tab-icon material-symbols-outlined">nightlife</mat-icon>Cocktail
               </div>
             </ng-template>
-  
+
             <div class="content px-5 py-3">
               <mat-grid-list cols="12" rowHeight="3:1" *ngFor="let item of Cocktail">
                 <mat-grid-tile [colspan]="4">
@@ -313,7 +310,7 @@
               </mat-grid-list>
             </div>
           </mat-tab>
-  
+
           <mat-tab>
             <ng-template mat-tab-label>
               <div class="mat-tab-label-content">
@@ -334,7 +331,7 @@
               </mat-grid-list>
             </div>
           </mat-tab>
-          
+
           <mat-tab>
             <ng-template mat-tab-label>
               <div class="mat-tab-label-content">
@@ -343,9 +340,10 @@
             </ng-template>
             <div class="content py-3 px-5">
               <cdk-accordion class="accordion">
-                <cdk-accordion-item *ngFor="let items of nonLiquor; let index = index;" #accordionItem="cdkAccordionItem"
-                  class="accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index"
-                  [attr.aria-expanded]="accordionItem.expanded" [attr.aria-controls]="'accordion-body-' + index">
+                <cdk-accordion-item *ngFor="let items of nonLiquor; let index = index;"
+                  #accordionItem="cdkAccordionItem" class="accordion-item" role="button" tabindex="0"
+                  [attr.id]="'accordion-header-' + index" [attr.aria-expanded]="accordionItem.expanded"
+                  [attr.aria-controls]="'accordion-body-' + index">
                   <div class="accordion-item-header" (click)="accordionItem.toggle()">
                     {{ items.Title }}
                     <span class="accordion-item-description">
@@ -376,12 +374,10 @@
               </cdk-accordion>
             </div>
           </mat-tab>
-  
+
         </mat-tab-group>
       </mat-tab>
-      
+
     </mat-tab-group>
   </div>
 </div>
-
-
