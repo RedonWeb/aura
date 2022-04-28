@@ -10,6 +10,14 @@
     font-family: Alameda-Script;
     src: url('/assets/fonts/AlamedaScriptPersonalUseRegular-RpPdv.otf');
 }
+@font-face {
+    font-family: Justink;
+    src: url('/src/assets/fonts/justink-0wql4.ttf');
+}
+@font-face {
+    font-family: Xillian;
+    src: url('/src/assets/fonts/xillian-regular.otf');
+}
 
 #section1 {
     padding-top: 50px;
@@ -24,6 +32,10 @@
     /*height: 50vh;
     color: #fff;
     background-color: #683ab7; */
+}
+
+#section2 .py-1{
+    font-family: Justink !important;
 }
 
 #section3 {
@@ -49,7 +61,7 @@ h1 {
 .subtitle{
     font-weight: lighter;
     line-height: 2rem;
-    font-family: 'My soul', cursive;
+    font-family: Xillian;
     
 }
 
