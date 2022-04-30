@@ -2,18 +2,22 @@
     font-family: League-Gothic;
     src: url('/assets/fonts/LeagueGothic-Regular.ttf');
 }
+
 @font-face {
     font-family: Paragon-Regular;
     src: url('/assets/fonts/Paragon-Regular.otf');
 }
+
 @font-face {
     font-family: Alameda-Script;
     src: url('/assets/fonts/AlamedaScriptPersonalUseRegular-RpPdv.otf');
 }
+
 @font-face {
     font-family: Justink;
     src: url('/src/assets/fonts/justink-0wql4.ttf');
 }
+
 @font-face {
     font-family: Xillian;
     src: url('/src/assets/fonts/xillian-regular.otf');
@@ -29,12 +33,9 @@
 
 #section2 {
     padding-top: 50px;
-    /*height: 50vh;
-    color: #fff;
-    background-color: #683ab7; */
 }
 
-#section2 .py-1{
+#section2 .py-1 {
     font-family: Justink !important;
 }
 
@@ -45,7 +46,8 @@
     background-color: #ffbe5d;
 }
 
-#about,#section42 p {
+#about p,
+#section42 p {
     margin: auto;
     width: 90%;
     font-size: 20px;
@@ -55,14 +57,17 @@
 
 h1 {
     font-size: 2.5rem;
-    /* font-family: 'Goldman', cursive; */
     font-family: League-Gothic;
 }
-.subtitle{
+
+.subtitle {
     font-weight: lighter;
     line-height: 2rem;
     font-family: Xillian;
-    
+
+}
+.subtitle span{
+    display: block;
 }
 
 .card {
@@ -81,7 +86,7 @@ h1 {
     color: #fff;
 }
 
-.blue{
+.blue {
     background-color: #00bcd4;
 }
 
@@ -93,7 +98,7 @@ h1 {
     color: #fff;
 }
 
-.green{
+.green {
     background-color: #009688;
 }
 
@@ -192,21 +197,92 @@ h1 {
     font-family: Paragon-Regular;
 }
 
-.chef-m{
+.chef-m {
     width: 80%;
     border-radius: 25px;
-    padding: 0   200px;
+    margin: auto !important;
+    padding: 30px 200px;
     background-color: #eee;
     text-align: justify;
 }
 
-.chef-m h1{
-    color: #000;    
+.chef-m h1 {
+    color: #000;
 }
 
-.chef-m p{
+.chef-m p {
     color: #444 !important;
     font-size: 2rem !important;
     line-height: 2rem !important;
     font-family: 'Qwigley', cursive !important;
+}
+
+.img img {
+    width: 400px;
+    height: 400px;
+}
+
+.flex {
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    #section1 {
+        padding-top: 50px;
+        height: 500px;
+        color: #fff;
+        background: url("src/assets/img/homeBg1.jpg") bottom center;
+        background-size: cover;
+    }
+
+    .container {
+        padding-top: 50px;
+        height: 450px;
+    }
+
+    .carousel,
+    .dish {
+        background: transparent !important;
+        overflow-x: scroll;
+    }
+
+    .carousel::-webkit-scrollbar,
+    .dish::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    .chef-m {
+        margin: 0;
+        padding: 0;
+    }
+
+    .chef-m h1 {
+        color: #eee;
+    }
+    .chef-m p {
+        color: #333 !important;
+    }
+
+    .img img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .flex {
+        display: initial;
+    }
+
+    #about p,
+    #section42 p {
+        margin: auto;
+        width: 90%;
+        font-size: 20px;
+        text-align: justify;
+        font-weight: lighter;
+        font-family: monospace;
+    }
+
+    .subtitle span{
+        display: initial;
+    }
 }
