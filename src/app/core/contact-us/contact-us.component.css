@@ -9,15 +9,20 @@ iframe {
   border-radius: 25px;
 }
 
-h1{
+h1 {
   font-size: 2rem;
   font-family: 'Goldman', cursive;
 }
 
 
-address h2{
+address h2 {
   font-family: 'Goldman', cursive;
 }
+
+.flex-row {
+  display: flex;
+}
+
 
 .container-contact {
   width: 100%;
@@ -44,11 +49,11 @@ address h2{
   padding: 25px 55px 55px 55px;
 }
 
-.contact-description{
+.contact-description {
   width: 50%;
 }
 
-.contact-info{
+.contact-info {
   padding-top: 7px;
   font-weight: 100;
   font-size: 15px;
@@ -75,7 +80,7 @@ button.icon button {
 
 .icon-container {
   width: 100%;
-  height: 60px;
+  height: 100%;
 }
 
 .icon {
@@ -110,19 +115,23 @@ button.icon button {
 }
 
 .icon-fill {
-color: #16A085;
+  color: #16A085;
 }
+
 .icon-enter {
-color: #3b5998;
+  color: #3b5998;
 }
+
 .icon-expand {
-color: #C82647;
+  color: #C82647;
 }
+
 .icon-collapse {
-color: #00bcd4;
+  color: #00bcd4;
 }
+
 .icon-rotate {
-color: #7E3661;
+  color: #7E3661;
 }
 
 
@@ -130,7 +139,7 @@ color: #7E3661;
 .icon-enter:hover,
 .icon-expand:hover,
 .icon-rotate:hover,
-.icon-collapse:hover{
+.icon-collapse:hover {
   color: #fff;
 }
 
@@ -162,7 +171,7 @@ color: #7E3661;
 }
 
 .icon-expand::before {
-  margin-left: -100%; 
+  margin-left: -100%;
   box-shadow: inset 0 0 0 60px #C82647;
 }
 
@@ -321,4 +330,41 @@ button.button-concept .button:hover {
 
 button.button-concept .button:active {
   opacity: 1;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .flex-row {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  iframe {
+    width: 100%;
+    border: 1px #999 solid !important;
+    border-radius: 25px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-family: 'Goldman', cursive;
+  }
+
+  address h2 {
+    font-family: 'Goldman', cursive;
+  }
+
+  .contact-description {
+    width: 100%;
+    padding: 1rem 1rem !important;
+  }
+
+  .wrap-contact {
+    padding: 0;
+  }
+
+  .icon {
+    margin: 12px;
+  }
 }
