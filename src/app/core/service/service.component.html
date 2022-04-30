@@ -1,28 +1,12 @@
 
 <main>
-
     <div class="slider">
         <div class="slider-inner">
-            <div class="slider-contents">
-                <img src="/assets/img/s3.jpg" class="serv-img"  alt="...">
-                <h2 class="slider-caption">Fine Dining</h2>
-                <p class="slider-txt">Enhance your dining experience with the best food, best service, and perfect ambiance</p>
-            </div>
-            <div class="slider-contents">
-                <img src="/assets/img/s2.jpg" class="serv-img"  alt="...">
-                <h2 class="slider-caption">Rooftop Bar</h2>
-                <p class="slider-txt">Uniquely designed bar to have a beach experience while sitting on the rooftop and enjoying your drinks with the warmth of music filling in your ears</p>
-            </div>
-            <div class="slider-contents">
-                <img src="/assets/img/s3.jpg" class="serv-img"  alt="...">
-                <h2 class="slider-caption">Banquet Hall</h2>
-                <p class="slider-txt">We plan for you! Just that perfect experience is waiting for you with a spacious hall and exquisite food</p>
-            </div>
-            <div class="slider-contents">
-                <img src="/assets/img/s2.jpg" class="serv-img"  alt="...">
-                <h2 class="slider-caption">Catering Service</h2>
-                <p class="slider-txt">We cater to your needs! Book now for a smooth experience</p>
-            </div>
+            <div class="slider-contents" *ngFor="let service of Services">
+                <img src="{{service.img}}" class="serv-img"  alt="...">
+                <h2 class="slider-caption">{{service.service}}</h2>
+                <p class="slider-txt">{{service.serviceDescription}}</p>
+            </div>  
         </div>
     </div>
 </main>
