@@ -1,58 +1,98 @@
-*{
-    color: #eee !important;
-}
-.g1 {
-    background:  rgba(0, 150, 136, 1)
-    
-}
-.g2 {
-    background:  rgba(0, 150, 136, 1)
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
-.filter{
-    height: 70vh;
-    filter: blur(2px);
-    -webkit-filter: blur(75px);
-    border-radius: 20px;
-    
-   
+main {
+  height: 100vh;
 }
 
-.sd{
-    width: 100%;
+body {
+  color: #444;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
-.s1{
-    background: url('/assets/img/s1.jpg') center bottom;
-    background-size: contain;
-}
-.s2{
-    background: url('/assets/img/s2.jpg') center bottom;
-}
-.s3{
-    background: url('/assets/img/s3.jpg') center bottom;
-}
-
-.serv-img{
-    border: 1px solid #eee;
-}
-.info{
-    width: 100%;
-}
-
-.card-title{
-    font-size: 2rem;
+.slider {
+  height: 100%;
+  position: relative;
+  padding-top: 2rem;
+  background: #eee;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.display-3{
-    /* font-family: 'Goldman', cursive; */
-    font-family: 'Alegreya SC', serif;
+.slider-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
 }
 
-.info p{
-    font-family: monospace;
-    font-size: 1.5rem;
-    line-height: 1.2rem;
-    font-weight: lighter;
-    color: #aaa;
+.slider-inner::-webkit-scrollbar {
+  width: 0px;
+}
+
+.slider-contents {
+  position: sticky;
+  top: 0;
+  height: 100%;
+  padding: 2rem;
+  background: #eee;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-shrink: 0;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.slider-image {
+  font-size: 2.7rem;
+  color: #2196F3;
+}
+
+.slider-caption {
+  font-weight: 500;
+  margin: 2rem 0 1rem;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+
+.slider-txt {
+  color: #999;
+  margin-bottom: 3rem;
+  max-width: 300px;
+}
+
+.serv-img {
+  width: 750px;
+  border: 1px solid #000;
+  border-radius: 25px;
 }
