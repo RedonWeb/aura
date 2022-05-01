@@ -4,12 +4,17 @@ export interface Item {
     ItemDescription?: String,
 }
 
-export interface Category{
+export interface Category {
     Title: String,
     Item: Item[],
+    Type?: {
+        Type1?: string,
+        Type2?: string,
+        Type3?: string,
+    }
 }
 
-export interface Price{
+export interface Price {
     Price1?: String,
     Price2?: String,
     Price3?: String,

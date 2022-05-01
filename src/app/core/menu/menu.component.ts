@@ -27,7 +27,12 @@ export class MenuComponent implements OnInit {
         { ItemName: 'Tuborg', ItemPrice: { Price2: '₹448', Price1: '₹298', Price3: '₹548' } },
         { ItemName: 'Cussburg', ItemPrice: { Price2: '₹448', Price1: '₹298', Price3: '₹548' } },
         { ItemName: 'Corona', ItemDescription: 'Pint', ItemPrice: { Price3: '₹498' } },
-      ]
+      ],
+      Type:{
+        Type1: 'c',
+        Type2: 'm',
+        Type3: 'b',
+      }
     },
     {
       Title: 'Vodka',

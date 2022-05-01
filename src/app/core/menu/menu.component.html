@@ -18,12 +18,17 @@
 
             </ng-template>
 
-            <div class="content p-3 d-flex justify-content-around">
+            <div class="content p-3 flex justify-content-around">
               <cdk-accordion class="accordion" style="max-width: 842px;">
-                <cdk-accordion-item *ngFor="let items of tandoor; let index = index;" #accordionItem="cdkAccordionItem"
-                  class="accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index"
-                  [attr.aria-expanded]="accordionItem.expanded" [attr.aria-controls]="'accordion-body-' + index">
+                <cdk-accordion-item *ngFor="let items of tandoor; let index = index;"
+                  #accordionItem="cdkAccordionItem" class="accordion-item" role="button" tabindex="0"
+                  [attr.id]="'accordion-header-' + index" [attr.aria-expanded]="accordionItem.expanded"
+                  [attr.aria-controls]="'accordion-body-' + index">
                   <div class="accordion-item-header" style="width: 840px;" (click)="accordionItem.toggle()">
+                    <!-- <div class="item-header">{{ items.Title }}</div>
+                    <div class="item-price">
+                      <div class="item-p" *ngFor="let icon in items.Type">{{ icon }}</div>
+                    </div> -->
                     {{ items.Title }}
                     <span class="accordion-item-description">
                       Click to {{ accordionItem.expanded ? 'close' : 'open' }}
@@ -31,19 +36,17 @@
                   </div>
                   <div class="accordion-item-body" role="region" [style.display]="accordionItem.expanded ? '' : 'none'"
                     [attr.id]="'accordion-body-' + index" [attr.aria-labelledby]="'accordion-header-' + index">
-                    <mat-grid-list cols="15" rowHeight="1:1" *ngFor="let item of items.Item">
-                      <mat-grid-tile [colspan]="5">
-                        <div class="text-inside-grid item-title">{{item.ItemName}}</div>
-                      </mat-grid-tile>
-                      <mat-grid-tile [colspan]="7">
-                        <div class="text-inside-grid item-desc">{{item.ItemDescription}}</div>
-                      </mat-grid-tile>
-                      <mat-grid-tile [colspan]="1">
-                      </mat-grid-tile>
-                      <mat-grid-tile [colspan]="2">
-                        <div class="text-inside-grid item-price">{{item.ItemPrice.Price3}}</div>
-                      </mat-grid-tile>
-                    </mat-grid-list>
+                    
+                    <div class="flex" *ngFor="let item of items.Item">
+                      <div class="item-title">{{item.ItemName}}</div>
+                      <div class="item-desc">{{item.ItemDescription}}</div>
+                      <div class="item-price">
+                        <div class="item-p">{{item.ItemPrice.Price1}}</div>
+                        <div class="item-p">{{item.ItemPrice.Price2}}</div>
+                        <div class="item-p">{{item.ItemPrice.Price3}}</div>
+                      </div>
+                    </div>
+
                   </div>
                 </cdk-accordion-item>
               </cdk-accordion>
@@ -58,7 +61,7 @@
 
             </ng-template>
 
-            <div class="content p-3 d-flex justify-content-around">
+            <div class="content p-3 flex justify-content-around">
               <cdk-accordion class="accordion" style="max-width: 842px;">
                 <cdk-accordion-item *ngFor="let items of indian; let index = index;" #accordionItem="cdkAccordionItem"
                   class="accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index"
@@ -71,19 +74,15 @@
                   </div>
                   <div class="accordion-item-body" role="region" [style.display]="accordionItem.expanded ? '' : 'none'"
                     [attr.id]="'accordion-body-' + index" [attr.aria-labelledby]="'accordion-header-' + index">
-                    <mat-grid-list cols="15" rowHeight="1:1" *ngFor="let item of items.Item">
-                      <mat-grid-tile [colspan]="5">
-                        <div class="text-inside-grid item-title">{{item.ItemName}}</div>
-                      </mat-grid-tile>
-                      <mat-grid-tile [colspan]="7">
-                        <div class="text-inside-grid item-desc">{{item.ItemDescription}}</div>
-                      </mat-grid-tile>
-                      <mat-grid-tile [colspan]="1">
-                      </mat-grid-tile>
-                      <mat-grid-tile [colspan]="2">
-                        <div class="text-inside-grid item-price">{{item.ItemPrice.Price3}}</div>
-                      </mat-grid-tile>
-                    </mat-grid-list>
+                    <div class="flex" *ngFor="let item of items.Item">
+                      <div class="item-title">{{item.ItemName}}</div>
+                      <div class="item-desc">{{item.ItemDescription}}</div>
+                      <div class="item-price">
+                        <div class="item-p">{{item.ItemPrice.Price1}}</div>
+                        <div class="item-p">{{item.ItemPrice.Price2}}</div>
+                        <div class="item-p">{{item.ItemPrice.Price3}}</div>
+                      </div>
+                    </div>
                   </div>
                 </cdk-accordion-item>
               </cdk-accordion>
@@ -98,7 +97,7 @@
 
             </ng-template>
 
-            <div class="content p-3 d-flex justify-content-around">
+            <div class="content p-3 flex justify-content-around">
               <cdk-accordion class="accordion" style="max-width: 842px;">
                 <cdk-accordion-item *ngFor="let items of chinese; let index = index;" #accordionItem="cdkAccordionItem"
                   class="accordion-item" role="button" tabindex="0" [attr.id]="'accordion-header-' + index"
@@ -111,19 +110,15 @@
                   </div>
                   <div class="accordion-item-body" role="region" [style.display]="accordionItem.expanded ? '' : 'none'"
                     [attr.id]="'accordion-body-' + index" [attr.aria-labelledby]="'accordion-header-' + index">
-                    <mat-grid-list cols="15" rowHeight="1:1" *ngFor="let item of items.Item">
-                      <mat-grid-tile [colspan]="5">
-                        <div class="text-inside-grid item-title">{{item.ItemName}}</div>
-                      </mat-grid-tile>
-                      <mat-grid-tile [colspan]="7">
-                        <div class="text-inside-grid item-desc">{{item.ItemDescription}}</div>
-                      </mat-grid-tile>
-                      <mat-grid-tile [colspan]="1">
-                      </mat-grid-tile>
-                      <mat-grid-tile [colspan]="2">
-                        <div class="text-inside-grid item-price">{{item.ItemPrice.Price3}}</div>
-                      </mat-grid-tile>
-                    </mat-grid-list>
+                    <div class="flex" *ngFor="let item of items.Item">
+                      <div class="item-title">{{item.ItemName}}</div>
+                      <div class="item-desc">{{item.ItemDescription}}</div>
+                      <div class="item-price">
+                        <div class="item-p">{{item.ItemPrice.Price1}}</div>
+                        <div class="item-p">{{item.ItemPrice.Price2}}</div>
+                        <div class="item-p">{{item.ItemPrice.Price3}}</div>
+                      </div>
+                    </div>
                   </div>
                 </cdk-accordion-item>
               </cdk-accordion>
@@ -138,7 +133,7 @@
 
             </ng-template>
 
-            <div class="content p-3 d-flex justify-content-around">
+            <div class="content p-3 flex justify-content-around">
               <cdk-accordion class="accordion" style="max-width: 842px;">
                 <cdk-accordion-item *ngFor="let items of continental; let index = index;"
                   #accordionItem="cdkAccordionItem" class="accordion-item" role="button" tabindex="0"
@@ -152,19 +147,15 @@
                   </div>
                   <div class="accordion-item-body" role="region" [style.display]="accordionItem.expanded ? '' : 'none'"
                     [attr.id]="'accordion-body-' + index" [attr.aria-labelledby]="'accordion-header-' + index">
-                    <mat-grid-list cols="15" rowHeight="1:1" *ngFor="let item of items.Item">
-                      <mat-grid-tile [colspan]="5">
-                        <div class="text-inside-grid item-title">{{item.ItemName}}</div>
-                      </mat-grid-tile>
-                      <mat-grid-tile [colspan]="7">
-                        <div class="text-inside-grid item-desc">{{item.ItemDescription}}</div>
-                      </mat-grid-tile>
-                      <mat-grid-tile [colspan]="1">
-                      </mat-grid-tile>
-                      <mat-grid-tile [colspan]="2">
-                        <div class="text-inside-grid item-price">{{item.ItemPrice.Price3}}</div>
-                      </mat-grid-tile>
-                    </mat-grid-list>
+                    <div class="flex" *ngFor="let item of items.Item">
+                      <div class="item-title">{{item.ItemName}}</div>
+                      <div class="item-desc">{{item.ItemDescription}}</div>
+                      <div class="item-price">
+                        <div class="item-p">{{item.ItemPrice.Price1}}</div>
+                        <div class="item-p">{{item.ItemPrice.Price2}}</div>
+                        <div class="item-p">{{item.ItemPrice.Price3}}</div>
+                      </div>
+                    </div>
                   </div>
                 </cdk-accordion-item>
               </cdk-accordion>
@@ -180,17 +171,15 @@
             </ng-template>
 
             <div class="content px-5 py-3">
-              <mat-grid-list cols="12" rowHeight="3:1" *ngFor="let item of kidsCorner">
-                <mat-grid-tile [colspan]="4">
-                  <div class="text-inside-grid item-title">{{item.ItemName}}</div>
-                </mat-grid-tile>
-                <mat-grid-tile [colspan]="7">
-                  <div class="text-inside-grid item-desc">{{item.ItemDescription}}</div>
-                </mat-grid-tile>
-                <mat-grid-tile [colspan]="1">
-                  <div class="text-inside-grid item-price">{{item.ItemPrice.Price3}}</div>
-                </mat-grid-tile>
-              </mat-grid-list>
+                <div class="flex" *ngFor="let item of kidsCorner">
+                  <div class="item-title">{{item.ItemName}}</div>
+                  <div class="item-desc">{{item.ItemDescription}}</div>
+                  <div class="item-price">
+                    <div class="item-p">{{item.ItemPrice.Price1}}</div>
+                    <div class="item-p">{{item.ItemPrice.Price2}}</div>
+                    <div class="item-p">{{item.ItemPrice.Price3}}</div>
+                  </div>
+                </div>
             </div>
           </mat-tab>
 
@@ -215,7 +204,7 @@
 
             </ng-template>
 
-            <div class="content p-3 d-flex justify-content-around">
+            <div class="content p-3 flex justify-content-around">
               <cdk-accordion class="accordion">
                 <cdk-accordion-item *ngFor="let items of liquorLeft; let index = index;"
                   #accordionItem="cdkAccordionItem" class="accordion-item" role="button" tabindex="0"
@@ -229,23 +218,15 @@
                   </div>
                   <div class="accordion-item-body" role="region" [style.display]="accordionItem.expanded ? '' : 'none'"
                     [attr.id]="'accordion-body-' + index" [attr.aria-labelledby]="'accordion-header-' + index">
-                    <mat-grid-list cols="15" rowHeight="1:1" *ngFor="let item of items.Item">
-                      <mat-grid-tile [colspan]="5">
-                        <div class="text-inside-grid item-title">{{item.ItemName}}</div>
-                      </mat-grid-tile>
-                      <mat-grid-tile [colspan]="4">
-                        <div class="text-inside-grid item-desc">{{item.ItemDescription}}</div>
-                      </mat-grid-tile>
-                      <mat-grid-tile [colspan]="2">
-                        <div class="text-inside-grid item-price">{{item.ItemPrice.Price1}}</div>
-                      </mat-grid-tile>
-                      <mat-grid-tile [colspan]="2">
-                        <div class="text-inside-grid item-price">{{item.ItemPrice.Price2}}</div>
-                      </mat-grid-tile>
-                      <mat-grid-tile [colspan]="2">
-                        <div class="text-inside-grid item-price">{{item.ItemPrice.Price3}}</div>
-                      </mat-grid-tile>
-                    </mat-grid-list>
+                    <div class="flex" *ngFor="let item of items.Item">
+                      <div class="item-title">{{item.ItemName}}</div>
+                      <div class="item-desc">{{item.ItemDescription}}</div>
+                      <div class="item-price">
+                        <div class="item-p">{{item.ItemPrice.Price1}}</div>
+                        <div class="item-p">{{item.ItemPrice.Price2}}</div>
+                        <div class="item-p">{{item.ItemPrice.Price3}}</div>
+                      </div>
+                    </div>
                   </div>
                 </cdk-accordion-item>
               </cdk-accordion>
@@ -263,23 +244,15 @@
                   </div>
                   <div class="accordion-item-body" role="region" [style.display]="accordionItem.expanded ? '' : 'none'"
                     [attr.id]="'accordion-body-' + index" [attr.aria-labelledby]="'accordion-header-' + index">
-                    <mat-grid-list cols="15" rowHeight="1:1" *ngFor="let item of items.Item">
-                      <mat-grid-tile [colspan]="5">
-                        <div class="text-inside-grid item-title">{{item.ItemName}}</div>
-                      </mat-grid-tile>
-                      <mat-grid-tile [colspan]="4">
-                        <div class="text-inside-grid item-desc">{{item.ItemDescription}}</div>
-                      </mat-grid-tile>
-                      <mat-grid-tile [colspan]="2">
-                        <div class="text-inside-grid item-price">{{item.ItemPrice.Price1}}</div>
-                      </mat-grid-tile>
-                      <mat-grid-tile [colspan]="2">
-                        <div class="text-inside-grid item-price">{{item.ItemPrice.Price2}}</div>
-                      </mat-grid-tile>
-                      <mat-grid-tile [colspan]="2">
-                        <div class="text-inside-grid item-price">{{item.ItemPrice.Price3}}</div>
-                      </mat-grid-tile>
-                    </mat-grid-list>
+                    <div class="flex" *ngFor="let item of items.Item">
+                      <div class="item-title">{{item.ItemName}}</div>
+                      <div class="item-desc">{{item.ItemDescription}}</div>
+                      <div class="item-price">
+                        <div class="item-p">{{item.ItemPrice.Price1}}</div>
+                        <div class="item-p">{{item.ItemPrice.Price2}}</div>
+                        <div class="item-p">{{item.ItemPrice.Price3}}</div>
+                      </div>
+                    </div>
                   </div>
                 </cdk-accordion-item>
               </cdk-accordion>
@@ -294,20 +267,15 @@
             </ng-template>
 
             <div class="content px-5 py-3">
-              <mat-grid-list cols="12" rowHeight="3:1" *ngFor="let item of Cocktail">
-                <mat-grid-tile [colspan]="4">
-                  <div class="text-inside-grid item-title">{{item.ItemName}}</div>
-                </mat-grid-tile>
-                <mat-grid-tile [colspan]="6">
-                  <div class="text-inside-grid item-desc">{{item.ItemDescription}}</div>
-                </mat-grid-tile>
-                <mat-grid-tile [colspan]="1">
-                  <div class="text-inside-grid item-price">{{item.ItemPrice.Price2}}</div>
-                </mat-grid-tile>
-                <mat-grid-tile [colspan]="1">
-                  <div class="text-inside-grid item-price">{{item.ItemPrice.Price3}}</div>
-                </mat-grid-tile>
-              </mat-grid-list>
+              <div class="flex" *ngFor="let item of Cocktail">
+                <div class="item-title">{{item.ItemName}}</div>
+                <div class="item-desc">{{item.ItemDescription}}</div>
+                <div class="item-price">
+                  <div class="item-p">{{item.ItemPrice.Price1}}</div>
+                  <div class="item-p">{{item.ItemPrice.Price2}}</div>
+                  <div class="item-p">{{item.ItemPrice.Price3}}</div>
+                </div>
+              </div>
             </div>
           </mat-tab>
 
@@ -318,17 +286,15 @@
               </div>
             </ng-template>
             <div class="content px-5 py-3">
-              <mat-grid-list cols="12" rowHeight="3:1" *ngFor="let item of Mocktail">
-                <mat-grid-tile [colspan]="4">
-                  <div class="text-inside-grid item-title">{{item.ItemName}}</div>
-                </mat-grid-tile>
-                <mat-grid-tile [colspan]="7">
-                  <div class="text-inside-grid item-desc">{{item.ItemDescription}}</div>
-                </mat-grid-tile>
-                <mat-grid-tile [colspan]="1">
-                  <div class="text-inside-grid item-price">{{item.ItemPrice.Price3}}</div>
-                </mat-grid-tile>
-              </mat-grid-list>
+              <div class="flex" *ngFor="let item of Mocktail">
+                <div class="item-title">{{item.ItemName}}</div>
+                <div class="item-desc">{{item.ItemDescription}}</div>
+                <div class="item-price">
+                  <div class="item-p">{{item.ItemPrice.Price1}}</div>
+                  <div class="item-p">{{item.ItemPrice.Price2}}</div>
+                  <div class="item-p">{{item.ItemPrice.Price3}}</div>
+                </div>
+              </div>
             </div>
           </mat-tab>
 
@@ -352,23 +318,15 @@
                   </div>
                   <div class="accordion-item-body" role="region" [style.display]="accordionItem.expanded ? '' : 'none'"
                     [attr.id]="'accordion-body-' + index" [attr.aria-labelledby]="'accordion-header-' + index">
-                    <mat-grid-list cols="15" rowHeight="1:1" *ngFor="let item of items.Item">
-                      <mat-grid-tile [colspan]="5">
-                        <div class="text-inside-grid item-title">{{item.ItemName}}</div>
-                      </mat-grid-tile>
-                      <mat-grid-tile [colspan]="4">
-                        <div class="text-inside-grid item-desc">{{item.ItemDescription}}</div>
-                      </mat-grid-tile>
-                      <mat-grid-tile [colspan]="2">
-                        <div class="text-inside-grid item-price">{{item.ItemPrice.Price1}}</div>
-                      </mat-grid-tile>
-                      <mat-grid-tile [colspan]="2">
-                        <div class="text-inside-grid item-price">{{item.ItemPrice.Price2}}</div>
-                      </mat-grid-tile>
-                      <mat-grid-tile [colspan]="2">
-                        <div class="text-inside-grid item-price">{{item.ItemPrice.Price3}}</div>
-                      </mat-grid-tile>
-                    </mat-grid-list>
+                    <div class="flex" *ngFor="let item of items.Item">
+                      <div class="item-title">{{item.ItemName}}</div>
+                      <div class="item-desc">{{item.ItemDescription}}</div>
+                      <div class="item-price">
+                        <div class="item-p">{{item.ItemPrice.Price1}}</div>
+                        <div class="item-p">{{item.ItemPrice.Price2}}</div>
+                        <div class="item-p">{{item.ItemPrice.Price3}}</div>
+                      </div>
+                    </div>
                   </div>
                 </cdk-accordion-item>
               </cdk-accordion>
