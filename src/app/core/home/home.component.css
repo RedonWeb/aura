@@ -15,19 +15,19 @@
 
 @font-face {
     font-family: Justink;
-    src: url('/src/assets/fonts/justink-0wql4.ttf');
+    src: url('/assets/fonts/justink-0wql4.ttf');
 }
 
 @font-face {
     font-family: Xillian;
-    src: url('/src/assets/fonts/xillian-regular.otf');
+    src: url('/assets/fonts/xillian-regular.otf');
 }
 
 #section1 {
     padding-top: 50px;
     height: 100vh;
     color: #fff;
-    background: url("src/assets/img/homeBg1.jpg") bottom center;
+    background: url("/assets/img/homeBg1.jpg") bottom center;
     background-size: contain;
 }
 
