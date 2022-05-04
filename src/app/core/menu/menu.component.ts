@@ -18,96 +18,6 @@ export class MenuComponent implements OnInit {
   nonAlcohol: string[] = ['Shakes', 'Juices', 'Energy Drinks', 'Aerated Drinks ', 'Mineral Water, Soda & F/L/S'];
 
 
-  liquorLeft: Category[] = [
-    {
-      Title: 'Chilled Beer',
-      Item: [
-        { ItemName: 'Budweiser Magnum', ItemPrice: { Price2: '₹448', Price1: '₹298', Price3: '₹548' } },
-        { ItemName: 'Budweiser Premium', ItemPrice: { Price2: '₹448', Price1: '₹298', Price3: '₹548' } },
-        { ItemName: 'Tuborg', ItemPrice: { Price2: '₹448', Price1: '₹298', Price3: '₹548' } },
-        { ItemName: 'Cussburg', ItemPrice: { Price2: '₹448', Price1: '₹298', Price3: '₹548' } },
-        { ItemName: 'Corona', ItemDescription: 'Pint', ItemPrice: { Price3: '₹498' } },
-      ],
-      Type:{
-        Type1: 'c',
-        Type2: 'm',
-        Type3: 'b',
-      }
-    },
-    {
-      Title: 'Vodka',
-      Item: [
-        { ItemName: 'Magic Moment', ItemPrice: { Price2: '₹188', Price3: '₹248' } },
-        { ItemName: 'Absolut', ItemPrice: { Price2: '₹398', Price3: '₹698' } },
-      ]
-    },
-    {
-      Title: 'Gin',
-      Item: [
-        { ItemName: 'Bombay Sapphire', ItemPrice: { Price2: '₹428', Price3: '₹748' } },
-      ]
-    },
-    {
-      Title: 'Tequila',
-      Item: [
-        { ItemName: 'Camino', ItemDescription: '30ml Shot', ItemPrice: { Price3: '₹448' } },
-      ]
-    },
-    {
-      Title: 'Rum/Brandy',
-      Item: [
-        { ItemName: 'Bacardi White', ItemPrice: { Price2: '₹198', Price3: '₹348' } },
-        { ItemName: 'Bacardi Black', ItemPrice: { Price2: '₹198', Price3: '₹348' } },
-        { ItemName: 'Old Monk', ItemPrice: { Price2: '₹168', Price3: '₹298' } },
-      ]
-    },
-    {
-      Title: 'Shots (60ml)',
-      Item: [
-        { ItemName: 'Kamikaze', ItemDescription: 'Absolut', ItemPrice: { Price3: '₹448' } },
-        { ItemName: 'Fire Shot', ItemDescription: 'Absolut', ItemPrice: { Price3: '₹448' } },
-        { ItemName: 'Aura Special Shot', ItemDescription: 'Any Flavour', ItemPrice: { Price3: '₹248' } },
-        { ItemName: 'B-52', ItemDescription: 'Vodka, Baileys, Jagemeister', ItemPrice: { Price3: '₹498' } },
-      ]
-    },
-  ];
-  liquorRight: Category[] = [
-    {
-      Title: 'Breezer',
-      Item: [
-        { ItemName: 'Any Flavours', ItemDescription: 'Pint', ItemPrice: { Price3: '₹298' } },
-      ]
-    },
-    {
-      Title: 'Liqueurs',
-      Item: [
-        { ItemName: 'Baileys', ItemPrice: { Price3: '₹698' } },
-        { ItemName: 'Jagermeister', ItemPrice: { Price3: '₹698' } },
-        { ItemName: 'Cointreau', ItemPrice: { Price3: '₹698' } },
-      ]
-    },
-    {
-      Title: 'Whisky',
-      Item: [
-        { ItemName: 'Blenders Pride', ItemPrice: { Price2: '₹168', Price3: '₹298' } },
-        { ItemName: '100 Pipers', ItemPrice: { Price2: '₹218', Price3: '₹398' } },
-        { ItemName: 'Black Dog', ItemPrice: { Price2: '₹218', Price3: '₹398' } },
-        { ItemName: 'Teacher\'s 50', ItemPrice: { Price2: '₹298', Price3: '₹548' } },
-        { ItemName: 'Ballentines', ItemPrice: { Price2: '₹298', Price3: '₹548' } },
-        { ItemName: 'Red Label', ItemPrice: { Price2: '₹298', Price3: '₹548' } },
-        { ItemName: 'Black Label', ItemPrice: { Price2: '₹448', Price3: '₹848' } },
-        { ItemName: 'Chivas Regal', ItemDescription: '12 years', ItemPrice: { Price2: '₹478', Price3: '₹898' } },
-        { ItemName: 'Glenlivit', ItemDescription: '12 years', ItemPrice: { Price2: '₹498', Price3: '₹949' } },
-      ]
-    },
-    {
-      Title: 'Wine',
-      Item: [
-        { ItemName: 'Sula', ItemDescription: 'Red/White', ItemPrice: { Price2: '₹498', Price3: '₹2498' } },
-        { ItemName: 'Jacobs Creek', ItemDescription: 'Red', ItemPrice: { Price2: '₹668', Price3: '₹3498' } },
-      ]
-    }
-  ];
   nonLiquor: Category[] = [
     {
       Title: 'Shakes',
@@ -170,16 +80,6 @@ export class MenuComponent implements OnInit {
     { ItemName: 'Detox', ItemDescription: 'Cranberry Juice, Mint Leaves, Green Lime, Fresh Ginger', ItemPrice: { Price3: '₹270' } },
     { ItemName: 'Virgin Sangria', ItemDescription: 'Cranberry Juice, Apple Juice, Sangria Syrup, Lemon Juice, Fresh Orange Chunks, Orange Juice', ItemPrice: { Price3: '₹225' } },
     { ItemName: 'Italian Smotch', ItemDescription: 'Mint Leaves, Lemon Juice, Lemon Chunks, Ginger Ale, Lime Cordial, Top Up with Coke', ItemPrice: { Price3: '₹225' } },
-  ]
-  Cocktail: Item[] = [
-    { ItemName: 'Mojito', ItemDescription: 'White Rum/Absolut, Mint Leaves, Brown Sugar, Lime Juice', ItemPrice: { Price2: '₹398', Price3: '₹498' } },
-    { ItemName: 'Whisky Sour', ItemDescription: 'Whisky, Lime Juice, Egg White', ItemPrice: { Price3: '₹498' } },
-    { ItemName: 'Lychee & Passion Fruit Martini', ItemDescription: 'Lychee & Passion Fruit Puree, Lime Juice, Vodka', ItemPrice: { Price3: '₹498' } },
-    { ItemName: 'Bloody Mary', ItemDescription: 'Vodka, Tomato Juice, Salt, Pepper, Tobacco Sauce', ItemPrice: { Price3: '₹498' } },
-    { ItemName: 'Aura Special Detox', ItemDescription: 'Vodka, Lime Juice, Cranberry Juice, Fresh Ginger & Mint', ItemPrice: { Price3: '₹468' } },
-    { ItemName: 'Green Apple Martini', ItemDescription: 'Vodka, Olive, Lime Juice, Green Apple Syrup', ItemPrice: { Price3: '₹498' } },
-    { ItemName: 'Pink Lady', ItemDescription: 'Gin, Fresh Cream, StrawBerry Puree', ItemPrice: { Price3: '₹498' } },
-    { ItemName: 'L.I.I.T', ItemDescription: 'Bacardi, Vodka, Tequila, Gin, Coke', ItemPrice: { Price3: '₹698' } },
   ]
   tandoor: Category[] = [
     {

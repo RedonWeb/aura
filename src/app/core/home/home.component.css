@@ -28,7 +28,7 @@
     height: 100vh;
     color: #fff;
     background: url("/assets/img/homeBg1.jpg") bottom center;
-    background-size: contain;
+    background-size: cover;
 }
 
 #section2 {
@@ -68,6 +68,11 @@ h1 {
 }
 .subtitle span{
     display: block;
+}
+
+.card-text{
+    line-height: 1.5rem;
+    font-family: Paragon-Regula !important;
 }
 
 .card {

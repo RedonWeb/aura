@@ -31,6 +31,8 @@ body {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 150, 136, 1) 100%);
 }
 
 .slider-inner {
@@ -50,7 +52,6 @@ body {
   top: 0;
   height: 100%;
   padding: 2rem;
-  background: #eee;
   text-align: center;
   display: -webkit-box;
   display: -webkit-flex;
@@ -68,6 +69,8 @@ body {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 150, 136, 1) 100%);
 }
 
 .slider-image {
@@ -83,7 +86,7 @@ body {
 }
 
 .slider-txt {
-  color: #999;
+  color: #fff;
   margin-bottom: 3rem;
   max-width: 300px;
 }
