@@ -231,6 +231,10 @@ h1 {
     display: flex;
 }
 
+.msg{
+    margin-top: 80px;
+}
+
 @media only screen and (max-width: 600px) {
     #section1 {
         padding-top: 50px;
