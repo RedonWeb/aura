@@ -46,7 +46,7 @@ address h2 {
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
-  padding: 25px 55px 55px 55px;
+  padding: 15px 55px 0px 55px;
 }
 
 .contact-description {
@@ -225,9 +225,9 @@ button.icon button {
 }
 
 button.button-concept {
-  width: auto;
+  width: fit-content;
   height: auto;
-  color: white;
+  color: #fff;
   border: none;
   outline: none;
 }
